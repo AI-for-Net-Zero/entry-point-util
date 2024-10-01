@@ -1,0 +1,16 @@
+[project]
+name = "entry-point-util"
+version = "1.0.0"
+dependencies = []
+requires-python = ">=3.9,<3.10"
+description = ""
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pytest", "coverage", "sphinx", "pip-tools", "mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests/"]
